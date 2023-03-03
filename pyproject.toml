@@ -1,14 +1,21 @@
 [tool.poetry]
-name = "python-template"
+name = "Scrapers"
 version = "0.0.1"
-description = "BareBone base Python Project with all standard development libs setup"
+description = "Scrapers for different purposes"
 authors = ["Merlin Sewina <merlin.sewina@paradoxinteractive.com>"]
 readme = "README.md"
-packages = [{include = "python_template"}]
+packages = [{include = "scrapers"}]
 
 [tool.poetry.dependencies]
-python = "3.9^"
+python = "^3.7"
 
+[tool.poetry.group.dev.dependencies]
+isort = "*"
+black = "*"
+flake8 = "5.0.4"
+pytest = "^7.2.1"
+mccabe = "*"
+mypy = "^1.0.1"
 
 [build-system]
 requires = ["poetry-core"]
