@@ -26,8 +26,8 @@ blacken:
 
 # Runs flake linter (Needs mccabe library to be installed)
 flake:
-	python -m flake8 --max-complexity 5 scrapers
-	python -m flake8 --max-complexity 5 tests 
+	python -m flake8 --max-complexity 3 scrapers
+	python -m flake8 --max-complexity 3 tests 
 
 # Runs Isort on all python files
 isort:
